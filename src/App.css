@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --primary: #0E93B6;
+  --secondary: #25C38C;
+  --light: #F0F9FB;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* utility */
+.text-decoration-none{
+  text-decoration: none;
+}
+
+.text-light{
+  color: var(--light);
+}
+
+.text-md{
+  font-size: 24px;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.bg-primary{
+  background-color: var(--primary);
+}
+
+.bg-secondary{
+  background-color: var(--secondary);
+}
+
+.d-flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+
+/* component */
+nav{
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  padding: 0 10%;
+  opacity: 0.89;
+}
+
+.navOption{
+  gap: 25px;
+}
+
+.hero{
+  height: 100vh;
+  text-align: center;
+}
+
+.about{
+  padding: 0 10%;
+  height: 100vh;
+}
+
+.about .about-content img{
+  width: 287px;
+}
+.about .about-content p{
+  width: 50%;
+}
+
+.skills{
+  height: 100vh;
+  gap: 100px;
+}
+
+.skillsIcon{
+  gap: 10px;
+}
+
+.skillsIcon img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(100%) contrast(100%);
+  width: 100px;  
+}
+
+.skillsIcon img:hover{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(0%) contrast(100%);
+}
+
+.project{
+  height: 100vh;
+  gap: 100px;
+}
+
+.containerProjects{
+  gap: 30px;
+}
+
+.contact{
+  height: 100vh;
+  gap: 100px;
+  background-image: url('./assets/seabottom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-medias{
+  gap: 30px;
+}
+
+.social-medias img{
+  width: 50px;
+}
+
+.footer{
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about{
+    padding: 0 ;    
+  }
+  .about-content{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about .about-content img{
+    width: 80%;
+  }
+
+  .about .about-content p{
+    width: 80%;
+  }
+
+  .skillsIcon img{    
+    width: 50px;  
+  }
+
+
+}
