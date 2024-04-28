@@ -120,6 +120,16 @@ nav{
   gap: 30px;
 }
 
+.containerProjects img{
+  width: 25%;
+}
+
+.containerProjects img:hover{
+  scale: 1.05;
+  filter: drop-shadow(5px 5px 5px var(--secondary));
+  cursor: pointer;
+}
+
 .contact{
   height: 100vh;
   gap: 100px;
@@ -134,6 +144,11 @@ nav{
 
 .social-medias img{
   width: 50px;
+}
+
+.social-medias img:hover{
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 3px var(--light));
 }
 
 .footer{
@@ -163,5 +178,8 @@ nav{
     width: 50px;  
   }
 
+  .containerProjects img{
+    width: 80%;
+  }
 
 }
