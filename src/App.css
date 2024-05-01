@@ -22,6 +22,10 @@
   color: var(--secondary);
 }
 
+.text-primary{
+  color: var(--primary);
+}
+
 .text-light{
   color: var(--light);
 }

@@ -7,7 +7,7 @@ import ReactJSIcon from '../assets/4691292_react native_react_icon.svg'
 const Skills = () => {
   return (
     <section id='skills' className='skills bg-primary d-flex flex-column justify-center align-center'>
-        <h2 className='text-light'>My Skills</h2>
+        <h2 className='text-primary'>My Skills</h2>
         <div className='skillsIcon d-flex justify-center'>
             <img src={HTMLIcon} alt="HTML" />
             <img src={CSSIcon} alt="CSS" />

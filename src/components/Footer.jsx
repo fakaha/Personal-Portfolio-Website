@@ -8,7 +8,7 @@ const Footer = () => {
   },[])
   return (
     <section className='footer bg-secondary'>
-        <p className='text-light'>©{yearTime} Zulfa Fakaha</p>
+        <p className='text-primary'>©{yearTime} Zulfa Fakaha</p>
     </section>
   )
 }

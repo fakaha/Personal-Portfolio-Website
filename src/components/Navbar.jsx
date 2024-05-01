@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="containerMenu d-flex justify-space-between">
         <a
           href="#"
-          className="text-decoration-none text-md font-bold text-light"
+          className="text-decoration-none text-md font-bold text-primary"
         >
           ZFakaha
         </a>
@@ -24,19 +24,19 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`navOption d-flex ${isMenuOpen ? "" : "d-none"}`}>
-          <Link to="#home" className="text-decoration-none text-light">
+          <Link to="#home" className="text-decoration-none text-primary">
             Home
           </Link>
-          <Link to="#about" className="text-decoration-none text-light">
+          <Link to="#about" className="text-decoration-none text-primary">
             About
           </Link>
-          <Link to="#skills" className="text-decoration-none text-light">
+          <Link to="#skills" className="text-decoration-none text-primary">
             Skills
           </Link>
-          <Link to="#projects" className="text-decoration-none text-light">
+          <Link to="#projects" className="text-decoration-none text-primary">
             Projects
           </Link>
-          <Link to="#contact" className="text-decoration-none text-light">
+          <Link to="#contact" className="text-decoration-none text-primary">
             Contact
           </Link>
         </div>      
