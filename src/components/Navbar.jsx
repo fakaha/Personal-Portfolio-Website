@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () =>{
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
-    <nav id="" className="bg-secondary d-flex justify-space-between align-center">      
+    <nav id="" className="nav bg-secondary d-flex justify-space-between align-center">
+        <div className="containerMenu d-flex justify-space-between">
         <a
           href="#"
           className="text-decoration-none text-md font-bold text-light"
         >
           ZFakaha
         </a>
-        <div className="navOption d-flex">
+          <div className="menu-toggle d-md-none" onClick={handleMenuToggle}>
+          <input className="check-toggle" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          </div>
+        </div>
+        <div className={`navOption d-flex ${isMenuOpen ? "" : "d-none"}`}>
           <Link to="#home" className="text-decoration-none text-light">
             Home
           </Link>
