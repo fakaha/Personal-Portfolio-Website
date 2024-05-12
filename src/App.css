@@ -201,13 +201,14 @@ nav{
 
   nav{
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
 
   .containerMenu{
   width: 95%;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
   .menu-toggle{

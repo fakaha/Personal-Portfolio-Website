@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="containerMenu d-flex justify-space-between">
         <a
           href="#"
-          className="text-decoration-none text-md font-bold text-primary"
+          className="logo text-decoration-none text-md font-bold text-primary"
         >
           ZFakaha
         </a>
