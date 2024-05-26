@@ -9,10 +9,10 @@ const Skills = () => {
     <section id='skills' className='skills bg-primary d-flex flex-column justify-center align-center'>
         <h2 className='text-primary'>My Skills</h2>
         <div className='skillsIcon d-flex justify-center'>
-            <img src={HTMLIcon} alt="HTML" />
-            <img src={CSSIcon} alt="CSS" />
-            <img src={JSIcon} alt="Javascript" />
-            <img src={ReactJSIcon} alt="React JS" />
+            <div className='kocak'><img src={HTMLIcon} alt="HTML" /><p>HTML</p></div>
+            <div><img src={CSSIcon} alt="CSS" /><p>CSS</p></div>
+            <div><img src={JSIcon} alt="Javascript" /><p>Javascript</p></div>
+            <div><img src={ReactJSIcon} alt="React JS" /><p>React JS</p></div>
         </div>
     </section>
   )

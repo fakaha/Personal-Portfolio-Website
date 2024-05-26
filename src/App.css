@@ -146,6 +146,16 @@ nav{
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(0%) contrast(100%);
 }
 
+.skillsIcon div p{
+  visibility: hidden;
+}
+
+.skillsIcon div:hover > p{
+  visibility:visible;
+  text-align: center;
+  color: var(--primary);
+}
+
 .project{
   height: 100vh;
   gap: 100px;
@@ -155,11 +165,17 @@ nav{
   gap: 30px;
 }
 
-.containerProjects img{
+.containerProjects .project-content{
+  text-align: center;
+  color: var(--light);
   width: 25%;
 }
 
-.containerProjects img:hover{
+.containerProjects .project-content img{
+  width: 100%;
+}
+
+.containerProjects .project-content img:hover{
   scale: 1.05;
   filter: drop-shadow(5px 5px 5px var(--secondary));
   cursor: pointer;
@@ -243,7 +259,11 @@ nav{
     width: 50px;  
   }
 
-  .containerProjects img{
+  .skillsIcon div p{
+    font-size: 60%;
+  }
+
+  .containerProjects .project-content{    
     width: 80%;
   }
 
