@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
   --primary: #171c22;
@@ -11,10 +11,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
+} */
 
 /* utility */
-.text-decoration-none{
+/* .text-decoration-none{
   text-decoration: none;
 }
 
@@ -72,11 +72,11 @@
 
 .align-center{
   align-items: center;
-}
+} */
 
 
 /* component */
-nav{
+/* nav{
   width: 100%;
   height: 90px;
   position: fixed;
@@ -179,13 +179,13 @@ nav{
   scale: 1.05;
   filter: drop-shadow(5px 5px 5px var(--secondary));
   cursor: pointer;
-}
+} */
 
-.contact{
+/* .contact{
   height: 100vh;
-  gap: 100px;
+  gap: 100px; */
   /* background-image: url('./assets/seabottom.jpg'); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -205,12 +205,12 @@ nav{
 .footer{
   text-align: center;
   padding: 15px 0;
-}
+} */
 
 
 
 /* MOBILE DEVICE */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .d-none{
     display: none;
   }
@@ -265,6 +265,6 @@ nav{
 
   .containerProjects .project-content{    
     width: 80%;
-  }
+  } */
 
-}
+/* } */

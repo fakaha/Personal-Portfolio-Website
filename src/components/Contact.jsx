@@ -1,21 +1,27 @@
 import React from 'react'
-import ig from '../assets/icon-instagram.svg'
-import linkedin from '../assets/icon-linkedin.svg'
-import github from '../assets/icons8-github.svg'
+import email from '../assets/email-icon.png'
+import phone from '../assets/phone-logo.png'
+import location from '../assets/location.png'
 
 const Contact = () => {
   const goto = (socialMedia) =>{
     window.open(socialMedia)
   }
   return (
-    <section id='contact' className='contact bg-primary d-flex flex-column justify-center align-center'>
-        <h2 className='text-light'>My Social Media</h2>
-        <div className='social-medias d-flex'>
-            <img src={ig} alt="instagram" onClick={() => goto('https://www.instagram.com/zulfa_fakaha')}/>
-            <img src={linkedin} alt="linkedin" onClick={() => goto('https://www.linkedin.com/in/zulfa-fakaha')}/>
-            <img src={github} alt="github" onClick={() => goto('https://github.com/fakaha')}/>
-        </div>
-    </section>
+    <div className='flex flex-col gap-2'>
+      <div className='flex gap-2 items-center'>
+        <img src={email} alt="" className='w-[2rem]'/>
+        <p className='text-[#fff]'>zulfakaha@gmail.com</p>
+      </div>
+      <div className='flex gap-2 items-center'>
+        <img src={phone} alt="" className='w-[2rem]'/>
+        <p className='text-[#fff]'>087708899020</p>
+      </div>
+      <div className='flex gap-2 items-center'>
+        <img src={location} alt="" className='w-[2rem]'/>
+        <p className='text-[#fff]'>Yogyakarta, Indonesia</p>
+      </div>
+    </div>
   )
 }
 

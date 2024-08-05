@@ -8,22 +8,9 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav id="" className="nav bg-secondary d-flex justify-space-between align-center">
-        <div className="containerMenu d-flex justify-space-between">
-        <a
-          href="#"
-          className="logo text-decoration-none text-md font-bold text-primary"
-        >
-          ZFakaha
-        </a>
-          <div className="menu-toggle d-md-none" onClick={handleMenuToggle}>
-          <input className="check-toggle" type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          </div>
-        </div>
-        <div className={`navOption d-flex ${isMenuOpen ? "" : "d-none"}`}>
+    <nav id="" className="flex bg-[#4b4b4b] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute right-0">
+        
+        <div className='flex gap-4 text-[#fff]'>
           <Link to="#home" className="text-decoration-none text-primary">
             Home
           </Link>
