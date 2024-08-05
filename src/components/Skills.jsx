@@ -6,13 +6,13 @@ import ReactJSIcon from '../assets/4691292_react native_react_icon.svg'
 
 const Skills = () => {
   return (
-    <section id='skills' className='skills bg-primary d-flex flex-column justify-center align-center'>
-        <h2 className='text-primary'>My Skills</h2>
-        <div className='skillsIcon d-flex justify-center'>
-            <div className='kocak'><img src={HTMLIcon} alt="HTML" /><p>HTML</p></div>
-            <div><img src={CSSIcon} alt="CSS" /><p>CSS</p></div>
-            <div><img src={JSIcon} alt="Javascript" /><p>Javascript</p></div>
-            <div><img src={ReactJSIcon} alt="React JS" /><p>React JS</p></div>
+    <section id='skills' className='skills flex flex-col justify-center'>
+        <h2 className='text-[#fff] text-2xl m-3'>My Skills</h2>
+        <div className='skillsIcon flex justify-center mt-5 gap-x-3'>
+            <div className='w-36 text-center'><img src={HTMLIcon} alt="HTML" /><p>HTML</p></div>
+            <div className='w-36 text-center'><img src={CSSIcon} alt="CSS" /><p>CSS</p></div>
+            <div className='w-36 text-center'><img src={JSIcon} alt="Javascript" /><p>Javascript</p></div>
+            <div className='w-36 text-center'><img src={ReactJSIcon} alt="React JS" /><p>React JS</p></div>
         </div>
     </section>
   )
