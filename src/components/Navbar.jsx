@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -11,18 +12,18 @@ const Navbar = () => {
     <nav id="" className="flex bg-[#4b4b4b] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute right-0">
         
         <div className='flex gap-5 text-[#fff]'>          
-          <Link to="/about" className="text-decoration-none text-primary">
+          <NavLink to="/about" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84]" : "text-decoration-none"}>
             About
-          </Link>
-          <Link to="/skills" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/skills" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84]" : "text-decoration-none"}>
             Skills
-          </Link>
-          <Link to="/projects" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/projects" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84]" : "text-decoration-none"}>
             Projects
-          </Link>
-          <Link to="/contact" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/contact" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84]" : "text-decoration-none"}>
             Contact
-          </Link>
+          </NavLink>
         </div>      
     </nav>
   );

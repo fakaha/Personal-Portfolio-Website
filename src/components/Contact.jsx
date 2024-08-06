@@ -12,21 +12,21 @@ const Contact = () => {
       <div className='flex gap-2 items-center'>
         <img src={email} alt="" className='w-[2rem]'/>
         <div>
-          <p className='opacity-70'>Email</p>
+          <p className='text-[#efcc84]'>Email</p>
           <p className='font-bold'>zulfakaha@gmail.com</p>
         </div>
       </div>
       <div className='flex gap-2 items-center'>
         <img src={phone} alt="" className='w-[2rem]'/>
         <div>
-          <p className='opacity-70'>Phone</p>
+          <p className='text-[#efcc84]'>Phone</p>
           <p className='font-bold'>087708899020</p>
         </div>
       </div>
       <div className='flex gap-2 items-center'>
         <img src={location} alt="" className='w-[2rem]'/>
         <div>
-          <p className='opacity-70'>Address</p>
+          <p className='text-[#efcc84]'>Address</p>
           <p className='font-bold'>Yogyakarta, Indonesia</p>        
         </div>
       </div>
