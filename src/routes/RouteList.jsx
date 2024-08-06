@@ -11,10 +11,11 @@ export const RouteList = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} >
-        <Route index path="contact" element={<Contact />}/>
-        <Route path="projects" element={<Project />}/>
-        <Route path="skills" element={<Skills />}/>
+        <Route index element={<AboutMe />}/>
         <Route path="about" element={<AboutMe />}/>
+        <Route path="skills" element={<Skills />}/>
+        <Route path="projects" element={<Project />}/>
+        <Route path="contact" element={<Contact />}/>
         </Route>
       </Routes>
     </BrowserRouter>

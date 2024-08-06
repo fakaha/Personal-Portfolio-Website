@@ -4,7 +4,7 @@ import Contact from './Contact'
 
 export const ProfileSidebar = () => {
   return (
-    <div className='w-3/12 bg-[#333] m-4 rounded-xl h-fit py-4'>
+    <div className='w-3/12 bg-[#333] m-4 rounded-xl h-fit pb-4'>
         <div className='flex flex-col items-center'>
             <img className='w-1/2 pt-2 rounded-xl my-4 bg-[#4b4b4b]' src={photo} alt="Photo Profile" />
             <h2 className='text-[#fff] text-2xl'>Zulfa Fakaha</h2>
