@@ -8,8 +8,8 @@ const Project = () => {
     window.open(project)
   }
   return (
-    <section id='projects' className='project flex flex-col justify-center'>
-        <h2 className='text-[#fff] text-2xl m-3'>Projects</h2>
+    <section id='projects' className='project flex flex-col justify-center p-5'>
+        <h2 className='text-[#fff] text-2xl'>Projects</h2>
         <div className='flex gap-x-6 justify-center  text-[#fff] mt-5'>
             <div className='project-content w-[30%]'>
               <img className='w-80' src={project1} alt="" onClick={() => goto('https://local-todo-apps-zul.vercel.app/')}/>
