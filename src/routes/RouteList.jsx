@@ -11,7 +11,7 @@ export const RouteList = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} >
-        <Route path="contact" element={<Contact />}/>
+        <Route index path="contact" element={<Contact />}/>
         <Route path="projects" element={<Project />}/>
         <Route path="skills" element={<Skills />}/>
         <Route path="about" element={<AboutMe />}/>
