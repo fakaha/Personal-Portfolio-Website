@@ -5,6 +5,8 @@ import Contact from "../components/Contact";
 import Project from "../components/Project";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
+import SocialMedia from "../components/SocialMedia";
+
 
 export const RouteList = () => {
   return (
@@ -15,7 +17,7 @@ export const RouteList = () => {
         <Route path="about" element={<AboutMe />}/>
         <Route path="skills" element={<Skills />}/>
         <Route path="projects" element={<Project />}/>
-        <Route path="contact" element={<Contact />}/>
+        <Route path="contact" element={<SocialMedia/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
