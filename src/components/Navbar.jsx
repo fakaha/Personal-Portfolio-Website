@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -8,24 +9,21 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav id="" className="flex bg-[#4b4b4b] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute right-0">
+    <nav id="" className="flex bg-[#383838] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute right-0">
         
-        <div className='flex gap-4 text-[#fff]'>
-          <Link to="#home" className="text-decoration-none text-primary">
-            Home
-          </Link>
-          <Link to="#about" className="text-decoration-none text-primary">
+        <div className='flex gap-5 text-[#fff]'>          
+          <NavLink to="/about" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
             About
-          </Link>
-          <Link to="#skills" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/skills" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
             Skills
-          </Link>
-          <Link to="#projects" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/projects" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
             Projects
-          </Link>
-          <Link to="#contact" className="text-decoration-none text-primary">
+          </NavLink>
+          <NavLink to="/contact" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
             Contact
-          </Link>
+          </NavLink>
         </div>      
     </nav>
   );
