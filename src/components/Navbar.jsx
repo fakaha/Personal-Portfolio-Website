@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <nav id="" className="flex bg-[#383838] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute right-0">
+    <nav id="" className="flex bg-[#383838] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute lg:right-0 lg:left-auto right-0 left-0">
         
         <div className='flex gap-5 text-[#fff]'>          
           <NavLink to="/about" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>

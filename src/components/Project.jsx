@@ -11,22 +11,22 @@ const Project = () => {
   return (
     <section id='projects' className='project flex flex-col justify-center p-5'>
         <h2 className='text-[#fff] text-2xl'>Projects</h2>
-        <div className='flex gap-x-6 justify-center  text-[#fff] mt-5'>
-            <div className='project-content w-[30%]'>
+        <div className='flex flex-wrap gap-8 lg:gap-x-6 justify-center text-[#fff] mt-5'>
+            <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project1} alt="" onClick={() => goto('https://local-todo-apps-zul.vercel.app/')}/>
               <p>Todo List website that uses local storage to save data without a database.</p>
             </div>
-            <div className='project-content w-[30%]'>
+            <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project2} alt="" onClick={() => goto('https://challenge-06-zulfa-fakaha.vercel.app/')}/>
               <p>Movie Website that displays several movies using a public API.</p>
               </div>
-            <div className='project-content w-[30%]'>
+            <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project3} alt="" onClick={() => goto('https://fpbinar-kel7.vercel.app/')}/>
               <p>Online Course website that features buying and watching for its users using a custom API.
                 <br />
               (This project was created while I was participating in the Independent Study Batch 5 as a <span className='text-secondary'>Front End</span> for the final project)</p>
             </div>
-            <div className='project-content w-[30%]'>
+            <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project4} alt="" onClick={() => goto('https://quranku-tau.vercel.app/')}/>
               <p>Quran website that features reading for its users using a API public.                
               </p>

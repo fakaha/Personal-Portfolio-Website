@@ -4,7 +4,7 @@ import { Main } from '../components/Main'
 
 export const Homepage = () => {
   return (
-    <div className='flex w-screen h-screen bg-[#111111]'>
+    <div className='flex w-screen lg:h-screen bg-[#111111] lg:flex-row flex-col gap-6 lg:gap-0'>
         <ProfileSidebar/>
         <Main/>
     </div>
