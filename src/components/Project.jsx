@@ -2,6 +2,7 @@ import React from 'react'
 import project1 from '../assets/todoProject.webp'
 import project2 from '../assets/movieProject.webp'
 import project3 from '../assets/courseProject.webp'
+import project4 from '../assets/project4.webp'
 
 const Project = () => {
   const goto = (project) =>{
@@ -24,6 +25,11 @@ const Project = () => {
               <p>Online Course website that features buying and watching for its users using a custom API.
                 <br />
               (This project was created while I was participating in the Independent Study Batch 5 as a <span className='text-secondary'>Front End</span> for the final project)</p>
+            </div>
+            <div className='project-content w-[30%]'>
+              <img className='w-80' src={project4} alt="" onClick={() => goto('https://quranku-tau.vercel.app/')}/>
+              <p>Quran website that features reading for its users using a API public.                
+              </p>
             </div>
         </div>
     </section>
