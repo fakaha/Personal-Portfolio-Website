@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      "chakra-petch" : [ "Chakra Petch", "sans-serif"],
+    }
   },
   plugins: [],
 }

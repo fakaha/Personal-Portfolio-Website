@@ -1,30 +1,18 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import { Button } from "./Button/Button";
+
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuToggle = () =>{
-    setIsMenuOpen(!isMenuOpen);
-  }
   return (
-    <nav id="" className="flex bg-[#383838] rounded-tr-xl rounded-br-xl rounded-bl-xl p-4 absolute lg:right-0 lg:left-auto right-0 left-0">
-        
-        <div className='flex gap-5 text-[#fff]'>          
-          <NavLink to="/about" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
-            About
-          </NavLink>
-          <NavLink to="/skills" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
-            Skills
-          </NavLink>
-          <NavLink to="/projects" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
-            Projects
-          </NavLink>
-          <NavLink to="/contact" className={({isActive }) => isActive ? "text-decoration-none text-[#efcc84] font-bold" : "text-decoration-none"}>
-            Contact
-          </NavLink>
-        </div>      
+    <nav className="flex justify-between px-8 py-7 items-center fixed top-0 right-0 left-0 bg-[#fff] mx-12 mt-7 w-max-md rounded-3xl">
+      <h1 onClick={() => window.scrollTo(0, 0)} className="text-xl lg:text-3xl hover:cursor-pointer">ZFakaha</h1>
+      <div className="flex gap-2 lg:gap-5 items-center">
+        <Button>Home</Button>
+        <Button>Projects</Button>
+      </div>
     </nav>
   );
 };

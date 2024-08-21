@@ -1,12 +1,16 @@
-import React from 'react'
-import { ProfileSidebar } from '../components/ProfileSidebar'
-import { Main } from '../components/Main'
+import React from "react";
+import Navbar from "../components/Navbar";
+import AboutMe from "../components/AboutMe";
+import Project from "../components/Project";
+import Footer from "../components/Footer";
 
 export const Homepage = () => {
   return (
-    <div className='flex w-screen lg:h-screen bg-[#111111] lg:flex-row flex-col gap-6 lg:gap-0'>
-        <ProfileSidebar/>
-        <Main/>
+    <div className="bg-[#d9dcdf] min-h-screen font-chakra-petch">
+      <Navbar />
+      <AboutMe/>
+      <Project/>
+      <Footer/>
     </div>
-  )
-}
+  );
+};

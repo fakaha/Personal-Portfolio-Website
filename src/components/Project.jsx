@@ -3,15 +3,16 @@ import project1 from '../assets/todoProject.webp'
 import project2 from '../assets/movieProject.webp'
 import project3 from '../assets/courseProject.webp'
 import project4 from '../assets/project4.webp'
+import project5 from '../assets/emporium-z.webp'
 
 const Project = () => {
   const goto = (project) =>{
     window.open(project)
   }
   return (
-    <section id='projects' className='project flex flex-col justify-center p-5'>
-        <h2 className='text-[#fff] text-2xl'>Projects</h2>
-        <div className='flex flex-wrap gap-8 lg:gap-x-6 justify-center text-[#fff] mt-5'>
+    <section id='projects' className='project flex flex-col justify-center mx-12 pt-32 px-8'>
+        <h2 className='text-2xl text-center mb-5 font-bold'>Projects</h2>
+        <div className='flex flex-wrap gap-8 lg:gap-x-6 justify-center mt-5'>
             <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project1} alt="" onClick={() => goto('https://local-todo-apps-zul.vercel.app/')}/>
               <p>Todo List website that uses local storage to save data without a database.</p>
@@ -28,7 +29,12 @@ const Project = () => {
             </div>
             <div className='project-content lg:w-[30%] w-full'>
               <img className='w-80' src={project4} alt="" onClick={() => goto('https://quranku-tau.vercel.app/')}/>
-              <p>Quran website that features reading for its users using a API public.                
+              <p>Quran website that features reading for its users using a API public.
+              </p>
+            </div>
+            <div className='project-content lg:w-[30%] w-full'>
+              <img className='w-80' src={project5} alt="" onClick={() => goto('https://emporium-z.vercel.app/')}/>
+              <p>Store website that features login, register, and adding items to cart for its users using a public API.
               </p>
             </div>
         </div>
