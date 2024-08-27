@@ -25,8 +25,8 @@ const AboutMe = () => {
 
   return (
     <div
-      id="about"
-      className="flex flex-col justify-center mx-12 pt-32 px-8 gap-y-10 lg:gap-y-0"
+      id="home"
+      className="flex flex-col justify-center lg:mx-12 mx-8 pt-32 px-8 gap-y-10 lg:gap-y-0"
     >
       <div className="flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-2/3 order-2 lg:order-1">

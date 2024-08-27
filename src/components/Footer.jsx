@@ -13,7 +13,7 @@ const Footer = () => {
     setYearTime(new Date().getFullYear())
   },[])
   return (
-    <section className='footer flex justify-between items-center mx-12 pt-20 pb-5 px-8'>
+    <section className='footer flex justify-between items-center lg:mx-12 mx-8 pt-20 pb-5 px-8'>
         <p className='text-sm lg:text-lg'>{yearTime} | Zulfa Fakaha</p>
         <div className='flex'>
           <img onClick={() => goto('https://www.linkedin.com/in/zulfa-fakaha/')} className='h-8' src={linkedin} alt="Social Media" />

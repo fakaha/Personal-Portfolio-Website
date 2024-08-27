@@ -10,7 +10,7 @@ const Project = () => {
     window.open(project)
   }
   return (
-    <section id='projects' className='project flex flex-col justify-center mx-12 pt-32 px-8'>
+    <section id='projects' className='project flex flex-col justify-center lg:mx-12 mx-8 pt-32 px-8'>
         <h2 className='text-2xl text-center mb-5 font-bold'>Projects</h2>
         <div className='flex flex-wrap gap-8 lg:gap-x-6 justify-center mt-5'>
             <div className='project-content lg:w-[30%] w-full'>
