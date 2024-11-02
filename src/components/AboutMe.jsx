@@ -1,21 +1,24 @@
 import React, { useEffect } from "react";
 import Photo from "../assets/PersonalPhoto.png";
 import Typed from "typed.js";
-import html from '../assets/html.svg'
-import css from '../assets/css.svg'
-import bootstrap from '../assets/bootstrap.svg'
-import tailwind from '../assets/tailwindcss.svg'
-import js from '../assets/js.svg'
-import reactJS from '../assets/reactjs.svg'
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import tailwind from "../assets/tailwindcss.svg";
+import js from "../assets/js.svg";
+import reactJS from "../assets/reactjs.svg";
+import nodeJS from "../assets/nodejs.svg";
+import expressJS from "../assets/express.svg";
+import mongoDB from "../assets/mongodb.svg";
 
 const AboutMe = () => {
   const el = React.useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Zulfa Fakaha.", "Front-End Developer."],
-      typeSpeed: 50,
-      backSpeed: 50,
+      strings: ["Zulfa Fakaha.", "Front-End Developer.", "Back-End Developer."],
+      typeSpeed: 30,
+      backSpeed: 40,
       loop: true,
     });
     return () => {
@@ -37,10 +40,9 @@ const AboutMe = () => {
             <p className="text-lg max-w-xl">
               I'm a Computer science student at University of Amikom Yogyakarta
               with special interest in{" "}
-              <span className="text-[#007bff]">website development</span>,
-              particularly in <span className="text-[#007bff]">Front End</span>.
+              <span className="text-[#007bff]">web development</span>.
               During my studies, i have learned C++, HTML, CSS, Bootstrap,
-              TailwindCSS, JavaScript, and React JS.
+              TailwindCSS, JavaScript, Node JS, React JS, Express JS, MongoDB, Mongoose, Git and Github.
             </p>
           </div>
         </div>
@@ -50,13 +52,16 @@ const AboutMe = () => {
       </div>
       <div>
         <p className="text-xl font-bold mb-3">Favorite Tech Stacks</p>
-        <div className="flex flex-wrap justify-center lg:justify-normal">
+        <div className="flex flex-wrap justify-center lg:justify-normal gap-x-3">
           <img className="h-20" src={html} alt="Tech Stack" />
           <img className="h-20" src={css} alt="Tech Stack" />
           <img className="h-20" src={bootstrap} alt="Tech Stack" />
           <img className="h-20" src={tailwind} alt="Tech Stack" />
           <img className="h-20" src={js} alt="Tech Stack" />
           <img className="h-20" src={reactJS} alt="Tech Stack" />
+          <img className="h-20" src={nodeJS} alt="Tech Stack" />
+          <img className="h-20" src={expressJS} alt="Tech Stack" />
+          <img className="h-20" src={mongoDB} alt="Tech Stack" />
         </div>
       </div>
     </div>
