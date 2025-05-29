@@ -5,6 +5,7 @@ import project3 from "../assets/courseProject.webp";
 import project4 from "../assets/project4.webp";
 import project5 from "../assets/emporium-z.webp";
 import projectapi1 from "../assets/projectapi1.webp";
+import projectAkana from "../assets/akana.webp";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -155,6 +156,25 @@ const Project = () => {
           <b className="text-[#007bff] mt-2 block">
             Typescript, Node JS, Express JS, MongoDB and Mongoose
           </b>
+        </div>
+
+        <div
+          data-aos="zoom-in-down"
+          className="project-content lg:w-[30%] w-full"
+        >
+          <img
+            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
+            src={projectAkana}
+            alt=""
+            onClick={() => goto("https://akanajawaraindonesia.com/")}
+          />
+          <p className="mt-2">
+            A Laravel-based promotional website for a travel agency in
+            Yogyakarta. It provides tour schedules, ticket booking, destination
+            information, and tourism events across Indonesia. A blog section
+            also features travel articles, with a special focus on Akana.
+          </p>
+          <b className="text-[#007bff] mt-2 block">PHP, Laravel, Bootstrap</b>
         </div>
       </div>
     </section>
