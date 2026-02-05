@@ -5,6 +5,7 @@ import project3 from "../assets/courseProject.webp";
 import project4 from "../assets/project4.webp";
 import project5 from "../assets/emporium-z.webp";
 import projectapi1 from "../assets/projectapi1.webp";
+import projectlinku from "../assets/linku.webp";
 import projectAkana from "../assets/akana.webp";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -155,6 +156,24 @@ const Project = () => {
           </p>
           <b className="text-[#007bff] mt-2 block">
             Typescript, Node JS, Express JS, MongoDB and Mongoose
+          </b>
+        </div>
+
+        <div
+          data-aos="zoom-in-down"
+          className="project-content lg:w-[30%] w-full"
+        >
+          <img
+            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
+            src={projectlinku}
+            alt=""
+            onClick={() => goto("https://lin-ku.vercel.app/")}
+          />
+          <p className="mt-2">
+            A simple website to shorten your links.
+          </p>
+          <b className="text-[#007bff] mt-2 block">
+            Javascript, Node JS, Express JS, React JS, MongoDB and Mongoose
           </b>
         </div>
 
