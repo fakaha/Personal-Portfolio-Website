@@ -208,9 +208,9 @@ const Project = () => {
             onClick={() => goto("https://sagara-rental.vercel.app/")}
           />
           <p className="mt-2">
-            Camping equipment rental website without login for renters and there is an admin page for owners to manage equipment and offline loans
+            Camping equipment rental website without login for renters and online payments using xendit. There is an admin page for owners to manage equipment and offline loans.
           </p>
-          <b className="text-[#007bff] mt-2 block">Javascript, Tailwind CSS, Express JS, React JS, Mongo DB</b>
+          <b className="text-[#007bff] mt-2 block">Javascript, Tailwind CSS, Express JS, React JS, Mongo DB, Xendit</b>
         </div>
       </div>
     </section>
