@@ -7,6 +7,7 @@ import project5 from "../assets/emporium-z.webp";
 import projectapi1 from "../assets/projectapi1.webp";
 import projectlinku from "../assets/linku.webp";
 import projectAkana from "../assets/akana.webp";
+import sagaraRental from "../assets/sagararental.webp";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -194,6 +195,22 @@ const Project = () => {
             also features travel articles, with a special focus on Akana.
           </p>
           <b className="text-[#007bff] mt-2 block">PHP, Laravel, Bootstrap</b>
+        </div>
+
+        <div
+          data-aos="zoom-in-down"
+          className="project-content lg:w-[30%] w-full"
+        >
+          <img
+            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
+            src={sagaraRental}
+            alt=""
+            onClick={() => goto("https://sagara-rental.vercel.app/")}
+          />
+          <p className="mt-2">
+            Camping equipment rental website without login for renters and there is an admin page for owners to manage equipment and offline loans
+          </p>
+          <b className="text-[#007bff] mt-2 block">Javascript, Tailwind CSS, Express JS, React JS, Mongo DB</b>
         </div>
       </div>
     </section>
