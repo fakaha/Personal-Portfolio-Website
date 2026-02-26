@@ -10,6 +10,9 @@ import reactJS from "../assets/reactjs.svg";
 import nodeJS from "../assets/nodejs.svg";
 import expressJS from "../assets/express.svg";
 import mongoDB from "../assets/mongodb.svg";
+import laravel from "../assets/Laravel.svg";
+import postgresql from "../assets/postgre.svg";
+import php from "../assets/php.svg";
 
 const AboutMe = () => {
   const el = React.useRef(null);
@@ -42,7 +45,7 @@ const AboutMe = () => {
               with special interest in{" "}
               <span className="text-[#007bff]">web development</span>.
               During my studies, i have learned C++, HTML, CSS, Bootstrap,
-              TailwindCSS, JavaScript, Node JS, React JS, Express JS, MongoDB, Mongoose, Git and Github.
+              TailwindCSS, JavaScript, Node JS, React JS, Express JS, Laravel, PostgreSQL, MySQL, MongoDB, Mongoose, Git and Github.
             </p>
           </div>
         </div>
@@ -58,10 +61,13 @@ const AboutMe = () => {
           <img className="h-20" src={bootstrap} alt="Tech Stack" />
           <img className="h-20" src={tailwind} alt="Tech Stack" />
           <img className="h-20" src={js} alt="Tech Stack" />
+          <img className="h-20" src={php} alt="Tech Stack" />
           <img className="h-20" src={reactJS} alt="Tech Stack" />
           <img className="h-20" src={nodeJS} alt="Tech Stack" />
           <img className="h-20" src={expressJS} alt="Tech Stack" />
+          <img className="h-20" src={laravel} alt="Tech Stack" />
           <img className="h-20" src={mongoDB} alt="Tech Stack" />
+          <img className="h-20" src={postgresql} alt="Tech Stack" />
         </div>
       </div>
     </div>
