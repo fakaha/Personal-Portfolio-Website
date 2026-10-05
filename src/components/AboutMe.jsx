@@ -1,77 +1,70 @@
-import React, { useEffect } from "react";
 import Photo from "../assets/PersonalPhoto.png";
-import Typed from "typed.js";
-import html from "../assets/html.svg";
-import css from "../assets/css.svg";
-import bootstrap from "../assets/bootstrap.svg";
-import tailwind from "../assets/tailwindcss.svg";
-import js from "../assets/js.svg";
-import reactJS from "../assets/reactjs.svg";
-import nodeJS from "../assets/nodejs.svg";
-import expressJS from "../assets/express.svg";
-import mongoDB from "../assets/mongodb.svg";
-import laravel from "../assets/Laravel.svg";
-import postgresql from "../assets/postgre.svg";
-import php from "../assets/php.svg";
+import { site } from "../data/site";
 
-const AboutMe = () => {
-  const el = React.useRef(null);
+const AboutMe = () => (
+  <section
+    id="home"
+    className="shell pb-20 pt-[calc(var(--header-h)+3.5rem)] md:pb-28 md:pt-[calc(var(--header-h)+5rem)]"
+  >
+    <div className="grid items-center gap-y-14 lg:grid-cols-12 lg:gap-x-12">
+      <div className="lg:col-span-7">
+        <p className="kicker text-accent">Amikom Yogyakarta — Computer Science</p>
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["Zulfa Fakaha.", "Front-End Developer.", "Back-End Developer."],
-      typeSpeed: 30,
-      backSpeed: 40,
-      loop: true,
-    });
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+        <h1 className="mt-6 font-display text-[clamp(2.75rem,8.5vw,6rem)] font-bold uppercase leading-[0.9] tracking-[-0.02em]">
+          <span className="block">Zulfa</span>
+          <span className="relative inline-block">
+            Fakaha
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-[0.06em] left-0 h-[0.08em] w-full bg-accent"
+            />
+          </span>
+        </h1>
 
-  return (
-    <div
-      id="home"
-      className="flex flex-col justify-center lg:mx-12 mx-8 pt-32 px-8 gap-y-10 lg:gap-y-0"
-    >
-      <div className="flex flex-col lg:flex-row items-center">
-        <div className="w-full lg:w-2/3 order-2 lg:order-1">
-          <h2 className="text-xl lg:text-2xl mb-3 font-bold">
-            Hello, I'm <span className="text-[#007bff]" ref={el}></span>
-          </h2>
-          <div className="">
-            <p className="text-lg max-w-xl">
-              I'm a Computer science student at University of Amikom Yogyakarta
-              with special interest in{" "}
-              <span className="text-[#007bff]">web development</span>.
-              During my studies, i have learned C++, HTML, CSS, Bootstrap,
-              TailwindCSS, JavaScript, Node JS, React JS, Express JS, Laravel, PostgreSQL, MySQL, MongoDB, Mongoose, Git and Github.
-            </p>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/3 order-1 lg:order-2">
-          <img className="mx-auto" src={Photo} alt="Personal Photo" />
+        <p className="mt-8 font-mono text-xs uppercase tracking-[0.25em] text-ink-soft">
+          Front-End &amp; Back-End Developer
+        </p>
+
+        <p className="mt-5 max-w-[46ch] leading-relaxed text-ink-soft">
+          Student at Universitas Amikom Yogyakarta. I build across the whole request —
+          React and Tailwind on the front, Node, Express and Laravel behind it.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center gap-6">
+          <a
+            href="#projects"
+            className="cut inline-flex items-center gap-3 bg-ink px-7 py-4 font-medium text-paper transition-colors duration-300 hover:bg-accent"
+          >
+            See the work
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a
+            href={site.socials[1].href}
+            target="_blank"
+            rel="noreferrer"
+            className="link-wipe font-medium transition-colors duration-300 hover:text-accent"
+          >
+            github.com/fakaha <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
-      <div>
-        <p className="text-xl font-bold mb-3">Favorite Tech Stacks</p>
-        <div className="flex flex-wrap justify-center lg:justify-normal gap-x-3">
-          <img className="h-20" src={html} alt="Tech Stack" />
-          <img className="h-20" src={css} alt="Tech Stack" />
-          <img className="h-20" src={bootstrap} alt="Tech Stack" />
-          <img className="h-20" src={tailwind} alt="Tech Stack" />
-          <img className="h-20" src={js} alt="Tech Stack" />
-          <img className="h-20" src={php} alt="Tech Stack" />
-          <img className="h-20" src={reactJS} alt="Tech Stack" />
-          <img className="h-20" src={nodeJS} alt="Tech Stack" />
-          <img className="h-20" src={expressJS} alt="Tech Stack" />
-          <img className="h-20" src={laravel} alt="Tech Stack" />
-          <img className="h-20" src={mongoDB} alt="Tech Stack" />
-          <img className="h-20" src={postgresql} alt="Tech Stack" />
-        </div>
+
+      <div className="lg:col-span-5">
+        <figure className="mx-auto max-w-xs border border-ink/15 bg-white p-2 lg:ml-auto lg:mr-0">
+          <img
+            src={Photo}
+            alt={`${site.name}, ${site.role.toLowerCase()} from ${site.location}`}
+            width="295"
+            height="388"
+            className="w-full"
+          />
+          <figcaption className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-ink-mute">
+            Portrait — Yogyakarta
+          </figcaption>
+        </figure>
       </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default AboutMe;

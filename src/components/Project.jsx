@@ -1,217 +1,92 @@
-import React from "react";
-import project1 from "../assets/todoProject.webp";
-import project2 from "../assets/movieProject.webp";
-import project3 from "../assets/courseProject.webp";
-import project4 from "../assets/project4.webp";
-import project5 from "../assets/emporium-z.webp";
-import projectapi1 from "../assets/projectapi1.webp";
-import projectsipendek from "../assets/sipendek.webp";
-import projectAkana from "../assets/akana.webp";
-import sagaraRental from "../assets/sagararental.webp";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import { useRef } from "react";
+import { projects } from "../data/projects";
+import { useReveal } from "../hooks/useReveal";
 
 const Project = () => {
-  const goto = (project) => {
-    window.open(project);
-  };
-  AOS.init();
-  AOS.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: "aos-init", // class applied after initialization
-    animatedClassName: "aos-animate", // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  const gridRef = useRef(null);
+  useReveal(gridRef, { threshold: 0.1 });
 
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 700, // values from 0 to 3000, with step 50ms
-    easing: "ease", // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-  });
   return (
-    <section
-      id="projects"
-      className="project flex flex-col justify-center lg:mx-12 mx-8 pt-32 px-8"
-    >
-      <h2 className="text-2xl text-center mb-5 font-bold">Projects</h2>
-      <div className="flex flex-wrap gap-8 lg:gap-x-6 justify-center mt-5">
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={project1}
-            alt=""
-            onClick={() => goto("https://local-todo-apps-zul.vercel.app/")}
-          />
-          <p className="mt-2">
-            Todo List website that uses local storage to save data without a
-            database.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Bootstrap, Javascript and React JS
-          </b>
+    <section id="projects" className="shell py-20 md:py-28">
+      <div className="flex flex-col gap-6 border-b border-ink/15 pb-8 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="kicker text-accent">03 — Selected work</p>
+          <h2 className="mt-4 max-w-[20ch] font-display text-4xl font-bold uppercase leading-[0.95] tracking-[-0.02em] md:text-6xl">
+            Things I have <span className="text-accent">built</span> and put online
+          </h2>
         </div>
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={project2}
-            alt=""
-            onClick={() =>
-              goto("https://challenge-06-zulfa-fakaha.vercel.app/")
-            }
-          />
-          <p className="mt-2">
-            Movie Website that displays several movies using a public API.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Bootstrap, Javascript and React JS
-          </b>
-        </div>
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={project3}
-            alt=""
-            onClick={() => goto("https://fpbinar-kel7.vercel.app/")}
-          />
-          <p className="mt-2">
-            Online Course website that features buying and watching for its
-            users using a custom API.
-            <br />
-            (This project was created while I was participating in the
-            Independent Study Batch 5 as a{" "}
-            <span className="text-secondary">Front End</span> for the final
-            project)
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Bootstrap, Javascript and React JS
-          </b>
-        </div>
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={project4}
-            alt=""
-            onClick={() => goto("https://quranku-tau.vercel.app/")}
-          />
-          <p className="mt-2">
-            Quran website that features reading for its users using a API
-            public.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Tailwind CSS, Javascript and React JS
-          </b>
-        </div>
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={project5}
-            alt=""
-            onClick={() => goto("https://emporium-z.vercel.app/")}
-          />
-          <p className="mt-2">
-            Store website that features login, register, and adding items to
-            cart for its users using a public API.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Tailwind CSS, Javascript, React JS and Redux
-          </b>
-        </div>
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={projectapi1}
-            alt=""
-            onClick={() => goto("https://sanberbe60-zul.vercel.app/docs/#/")}
-          />
-          <p className="mt-2">
-            A simple e-commerce Web API with features for user registration,
-            login, managing products, managing product categories, and managing
-            product orders.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Typescript, Node JS, Express JS, MongoDB and Mongoose
-          </b>
-        </div>
+        <p className="kicker text-ink-mute md:text-right">
+          {String(projects.length).padStart(2, "0")} projects — click any of them
+        </p>
+      </div>
 
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={projectsipendek}
-            alt=""
-            onClick={() => goto("https://lin-ku.vercel.app/")}
-          />
-          <p className="mt-2">
-            A simple website to shorten your links.
-          </p>
-          <b className="text-[#007bff] mt-2 block">
-            Javascript, Node JS, Express JS, React JS, MongoDB and Mongoose
-          </b>
-        </div>
+      <div ref={gridRef} className="grid gap-x-8 gap-y-12 pt-12 sm:grid-cols-2">
+        {projects.map((project, index) => (
+          <article
+            key={project.title}
+            data-reveal
+            className="reveal group flex flex-col"
+          >
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${project.title} in a new tab`}
+              className="block border border-ink/15 bg-white p-2 transition-colors duration-300 hover:border-ink"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.imageAlt}
+                  loading="lazy"
+                  className="aspect-[16/9] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                />
+              </div>
+            </a>
 
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={projectAkana}
-            alt=""
-            onClick={() => goto("https://akanajawaraindonesia.com/")}
-          />
-          <p className="mt-2">
-            A Laravel-based promotional website for a travel agency in
-            Yogyakarta. It provides tour schedules, ticket booking, destination
-            information, and tourism events across Indonesia. A blog section
-            also features travel articles, with a special focus on Akana.
-          </p>
-          <b className="text-[#007bff] mt-2 block">PHP, Laravel, Bootstrap</b>
-        </div>
+            <div className="mt-4 flex flex-1 flex-col">
+              <div className="flex items-baseline gap-3">
+                <span className="font-mono text-sm text-accent">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="kicker text-ink-mute">{project.category}</span>
+              </div>
 
-        <div
-          data-aos="zoom-in-down"
-          className="project-content lg:w-[30%] w-full"
-        >
-          <img
-            className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={sagaraRental}
-            alt=""
-            onClick={() => goto("https://sagara-rental.vercel.app/")}
-          />
-          <p className="mt-2">
-            Camping equipment rental website without login for renters and online payments using xendit. There is an admin page for owners to manage equipment and offline loans.
-          </p>
-          <b className="text-[#007bff] mt-2 block">Javascript, Tailwind CSS, Express JS, React JS, Mongo DB, Xendit</b>
-        </div>
+              <h3 className="mt-2 font-display text-lg font-bold uppercase tracking-wide">
+                {project.title}
+              </h3>
+
+              <p className="mt-2 grow text-[0.9375rem] leading-relaxed text-ink-soft">
+                {project.description}
+              </p>
+
+              {project.note ? (
+                <p className="mt-3 border-l-2 border-accent pl-3 font-mono text-[11px] leading-relaxed text-ink-soft">
+                  {project.note}
+                </p>
+              ) : null}
+
+              <p className="mt-4 font-mono text-[11px] uppercase leading-relaxed tracking-[0.12em] text-ink-mute">
+                {project.tech.join(" · ")}
+              </p>
+
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-flex items-center gap-2 self-start font-medium transition-colors duration-300 hover:text-accent"
+              >
+                <span className="link-wipe">View project</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                >
+                  ↗
+                </span>
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
