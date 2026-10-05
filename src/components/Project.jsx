@@ -5,7 +5,7 @@ import project3 from "../assets/courseProject.webp";
 import project4 from "../assets/project4.webp";
 import project5 from "../assets/emporium-z.webp";
 import projectapi1 from "../assets/projectapi1.webp";
-import projectlinku from "../assets/linku.webp";
+import projectsipendek from "../assets/sipendek.webp";
 import projectAkana from "../assets/akana.webp";
 import sagaraRental from "../assets/sagararental.webp";
 import AOS from "aos";
@@ -166,7 +166,7 @@ const Project = () => {
         >
           <img
             className="w-80 hover:opacity-75 hover:scale-105 duration-300"
-            src={projectlinku}
+            src={projectsipendek}
             alt=""
             onClick={() => goto("https://lin-ku.vercel.app/")}
           />
