@@ -60,7 +60,7 @@ export const projects = [
     imageAlt: "API documentation screen",
   },
   {
-    title: "Lin-Ku",
+    title: "Sipendek",
     category: "Full-Stack",
     description: "A straightforward link shortener: paste a long URL, get a short one back.",
     tech: ["JavaScript", "Node.js", "Express", "React", "MongoDB", "Mongoose"],

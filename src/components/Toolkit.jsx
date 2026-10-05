@@ -53,11 +53,6 @@ const Toolkit = () => {
                   <span className="font-display text-sm font-semibold uppercase tracking-wide">
                     {item.name}
                   </span>
-                  {item.note ? (
-                    <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.15em] text-ink-mute">
-                      {item.note}
-                    </span>
-                  ) : null}
                 </li>
               ))}
             </ul>

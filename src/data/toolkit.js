@@ -36,7 +36,7 @@ export const toolkit = [
       { name: "CSS", icon: icons.css },
       { name: "JavaScript", icon: icons.js },
       { name: "PHP", icon: icons.php },
-      { name: "C++", note: "basics" },
+      { name: "C++" },
     ],
   },
   {
