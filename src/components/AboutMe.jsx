@@ -26,8 +26,9 @@ const AboutMe = () => (
         </p>
 
         <p className="mt-5 max-w-[46ch] leading-relaxed text-ink-soft">
-          Student at Universitas Amikom Yogyakarta. I build across the whole request —
-          React and Tailwind on the front, Node, Express and Laravel behind it.
+          Computer Science graduate from Universitas Amikom Yogyakarta. I build
+          across the whole request — React and Tailwind on the front, Node,
+          Express and Laravel behind it.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-6">
@@ -50,7 +51,7 @@ const AboutMe = () => (
       </div>
 
       <div className="lg:col-span-5">
-        <figure className="mx-auto max-w-xs border border-ink/15 bg-white p-2 lg:ml-auto lg:mr-0">
+        <figure className="mx-auto max-w-[14rem] lg:ml-auto lg:mr-0">
           <img
             src={Photo}
             alt={`${site.name}, ${site.role.toLowerCase()} from ${site.location}`}
@@ -58,9 +59,6 @@ const AboutMe = () => (
             height="388"
             className="w-full"
           />
-          <figcaption className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-ink-mute">
-            Portrait — Yogyakarta
-          </figcaption>
         </figure>
       </div>
     </div>

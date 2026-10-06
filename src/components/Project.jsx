@@ -10,7 +10,7 @@ const Project = () => {
     <section id="projects" className="shell py-20 md:py-28">
       <div className="flex flex-col gap-6 border-b border-ink/15 pb-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="kicker text-accent">03 — Selected work</p>
+          <p className="kicker text-accent">04 — Selected work</p>
           <h2 className="mt-4 max-w-[20ch] font-display text-4xl font-bold uppercase leading-[0.95] tracking-[-0.02em] md:text-6xl">
             Things I have <span className="text-accent">built</span> and put online
           </h2>

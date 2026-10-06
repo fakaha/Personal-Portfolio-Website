@@ -10,7 +10,7 @@ const Toolkit = () => {
     <section id="toolkit" className="shell py-20 md:py-28">
       <div className="flex flex-col gap-6 border-b border-ink/15 pb-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="kicker text-accent">02 — Toolkit</p>
+          <p className="kicker text-accent">03 — Toolkit</p>
           <h2 className="mt-4 max-w-[18ch] font-display text-4xl font-bold uppercase leading-[0.95] tracking-[-0.02em] md:text-6xl">
             The tools I <span className="text-accent">reach for</span>
           </h2>

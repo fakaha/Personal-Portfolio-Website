@@ -52,7 +52,7 @@ const Navbar = () => {
           {site.name}
         </a>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
           {navLinks.map((link) => {
             const isActive = active === link.href.slice(1);
             return (
@@ -75,7 +75,7 @@ const Navbar = () => {
           href={site.socials[0].href}
           target="_blank"
           rel="noreferrer"
-          className="kicker hidden items-center gap-2 border border-paper/40 px-4 py-2.5 transition-colors duration-300 hover:border-accent-bright hover:bg-accent-bright hover:text-ink md:inline-flex"
+          className="kicker hidden items-center gap-2 border border-paper/40 px-4 py-2.5 transition-colors duration-300 hover:border-accent-bright hover:bg-accent-bright hover:text-ink lg:inline-flex"
         >
           Say hello
           <span aria-hidden="true">↗</span>
@@ -86,7 +86,7 @@ const Navbar = () => {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="-mr-2 flex h-11 w-11 items-center justify-center md:hidden"
+          className="-mr-2 flex h-11 w-11 items-center justify-center lg:hidden"
         >
           <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
           <span className="relative block h-4 w-7">
@@ -106,7 +106,7 @@ const Navbar = () => {
 
       <div
         id="mobile-menu"
-        className={`grid transition-all duration-300 md:hidden ${
+        className={`grid transition-all duration-300 lg:hidden ${
           open ? "visible grid-rows-[1fr] opacity-100" : "invisible grid-rows-[0fr] opacity-0"
         }`}
       >

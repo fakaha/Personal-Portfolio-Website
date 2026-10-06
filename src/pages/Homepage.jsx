@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import AboutMe from "../components/AboutMe";
 import Toolkit from "../components/Toolkit";
+import Experience from "../components/Experience";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -11,6 +12,7 @@ export const Homepage = () => {
       <Navbar />
       <main>
         <AboutMe />
+        <Experience />
         <Toolkit />
         <Project />
         <Contact />

@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-prime-dark text-paper">
       <div ref={sectionRef} data-reveal className="reveal shell py-20 md:py-24">
-        <p className="kicker text-accent-bright">04 — Contact</p>
+        <p className="kicker text-accent-bright">05 — Contact</p>
 
         <div className="mt-8 flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div>
